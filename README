@@ -1,0 +1,21 @@
+* INTRODUCTION
+    This is the 'base64' module that exports the standard interface used by
+    the Multi Theft Auto: San Andreas Deathmatch server and it's Lua scripting
+    engine to allow C/C++ developers to add functionality to their servers.
+
+    The functions provided by this plugin are base64_decode() and base64_encode()
+
+* INSTALLATION
+    In order to install your module, first make sure it compiles correctly and
+    verify that it can be executed. When using external library dependencies
+    in the form of a shared library (.so or .dll file) you will have to place
+    the library inside the directory of the MTA:SA DM server executable.
+
+    To load your module at server initialisation, use the module configuration
+    tag syntax as specified in your mtaserver.conf file:
+
+    <!-- <module>sample_win32.dll</module> -->
+    <!-- <module>sample_linux.so</module> -->
+
+    Place your module library inside the mods/deathmatch/modules directory.
+    Be sure to create this directory if it does not exist.
